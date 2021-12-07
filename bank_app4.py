@@ -71,7 +71,7 @@ class BankUser(User):
 
 
 bankuser1 = BankUser("Bob", 1234, "bobpassword")
-bankuser2 = BankUser("Alice", 5678, "alicepassword")
+bankuser2 = BankUser("Missi", 5678, "missipassword")
 bankuser2.deposit(5000)
 bankuser2.show_balance()
 bankuser1.show_balance()
@@ -85,7 +85,7 @@ bankuser2.request_money(bankuser1, 250)
 bankuser2.show_balance()
 bankuser1.show_balance()
 
-"""  Driver Code for Task 2  """
+"""  Driver Code for change password, name, pin  """
 
 """ 
 user1 = User("Bob", 1234, "password")
@@ -95,16 +95,4 @@ user1.change_name("Bobby")
 user1.change_pin(4321)
 user1.change_password("newpassword")
 print(user1.name, user1.pin, user1.password) 
-"""
-
-"""  Driver Code for Task 4  """
-
-""" bankuser1 = BankUser("Bob", 1234, "password")
-print(bankuser1.name, bankuser1.pin, bankuser1.password)
-
-bankuser1.show_balance()
-bankuser1.deposit(1000)
-bankuser1.show_balance()
-bankuser1.withdraw(500)
-bankuser1.show_balance() 
 """
